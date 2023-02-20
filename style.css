@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+}
+
+body {
+    background-color: #eee;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-inline {
+    display: flex;
+    width: 100%;
+}
+
+#inputBookIsComplete {
+    margin-left: 10px;
+}
+
+#submitBook {
+    margin-top: 10px;
+    background-color: darkgreen;
+}
+
+input[type="submit"], button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+input[type="checkbox"]:hover, input[type="submit"]:hover, button:hover {
+    cursor: pointer;
+}
+
+#inputSearch {
+    display: flex;
+    align-items: center;
+}
+
+#searchBookTitle {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.book-title {
+    text-align: left;
+}
+
+.action {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchButton, .complete-button {
+    background-color: darkgreen;
+}
+
+.incomplete-button {
+    background-color: darkorange;
+}
+
+.edit-button {
+    background-color: darkblue;
+}
+
+.remove-button {
+    margin-left: 10px;
+    background-color: darkred;
+}
+
+footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    main {
+        margin: 0 20px 20px;
+    }
+
+    #inputSearch {
+        flex-direction: column;
+        margin: 20px auto 0;
+    }
+
+    #searchBookTitle, #searchButton {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .action {
+        flex-direction: column;
+    }
+
+    button, .remove-button {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}

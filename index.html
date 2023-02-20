@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rak Buku</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Tambah/Edit Buku</h2>
+            <form class="form" id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="number" min="0" maxlength="4" required>
+                </div>
+                <div class="input-inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <input id="submitBook" type="submit" name="submit" value="Simpan">
+            </form>
+        </section>
+
+        <section class="container">
+            <h2>Cari Buku</h2>
+            <div id="inputSearch">
+                <label for="searchBookTitle">Judul</label>
+                <input id="searchBookTitle" type="text">
+                <button id="searchButton">Cari</button>
+            </div>
+        </section>
+
+        <!-- 2 RAK BUKU -->
+        <section id="bookshelf">
+            <div class="container" id="incompleteBookshelf">
+                <h2>Belum selesai dibaca</h2>
+                <div id="incompleteBookList"></div>
+            </div>
+            <div class="container" id="completeBookshelf">
+                <h2>Selesai dibaca</h2>
+                <div id="completeBookList"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2022 Fajar Riza Fahlevi - Dicoding Submission</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
